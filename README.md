@@ -7,7 +7,7 @@
 
  The application runs on 2 threads so that the interface doesn't freeze when the langchain framework makes the request to OpenAI to get an answer. While the thread makes the reques to OpenAI a loading bar downside the textbox starts moving so that the user can know that the application is running. After the answer is written the loadbar stops.
 
- You can select the language in which you want the ChatBot to respond in the upper-left corner of the interface. You can change the UI Scaling and select a Dark or Light Theme for the interface from the lower right corner.
+ You can select the language in which you want the ChatBot to respond in the upper-left corner of the interface or you can change the UI Scaling Theme for the interface from the lower right corner.
 
 # Interface
 
