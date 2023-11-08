@@ -12,3 +12,27 @@
  # Example of running
 
 ![4](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/d18d979b-05c1-4a1c-88c3-86c8235271f5)
+
+# Inatallation and Packages
+
+You will need to download the fies as .zip, extract them and then open the .py file with pycharm as a new project. You need to keep the folders 'API_KEY' and 'FILES_HERE' inside the project repository, otherwise the program won't work correctly.
+
+This project uses multiple packages which you will need to install inside you python project for the application to run.
+
+You can install all the needed packages by using the pip commands inside the terminal.
+pip install deep-translator
+
+pip install customtkinter
+
+pip install python-dotenv
+
+pip install langchain
+
+pip install openai(or “pip install openai==0.28.1” in case it doesn’t work)
+
+pip install PyPDF2
+
+pip install tiktoken
+
+pip install faiss-gpu(or “pip install faiss-cpu”)
+
