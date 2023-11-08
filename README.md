@@ -53,6 +53,7 @@ Files that you want the neural network to work with will be put inside '**FILES_
 This project uses multiple packages which you will need to install inside you python project for the application to run.
 
 You can install all the needed packages by using the pip commands inside the terminal.
+
 pip install deep-translator
 
 pip install customtkinter
