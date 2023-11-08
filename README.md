@@ -1,9 +1,11 @@
 # OpenAI-LangChain-ChatBot-with-CustomTkinter
  ChatBot application with interface in CustomTkinter that uses the LangChain framework to embed and store data inside a vectorial database so that it can send it to a neural network provided by OpenAI and get the user the answers that he needs based on the files stored.
 
- The application uses the OPENAI_API_KEY that you can get from https://platform.openai.com/account/api-keys. After you make an account and get the API_KEY you need to insert it into the folder 'API_KEY' inside the 'OPENAI_API_KEY.env' file.
+ The application uses the **OPENAI_API_KEY** that you can get from https://platform.openai.com/account/api-keys. After you make an account and get the **API_KEY** you need to insert it into the folder '**API_KEY**' inside the '**OPENAI_API_KEY.env**' file.
 
- You can put files like pdf, word, exel etc. inside the 'FILES_HERE' folder. There the application will extract the text from the files in the folder, store the data inside a vector, segment it, embed it and store it into a vectorial database by using FIASS (Facebook AI Similarity Search) from the langchain package.
+ You can put files like pdf, word, exel etc. inside the '**FILES_HERE**' folder. There the application will extract the text from the files in the folder, store the data inside a vector, segment it, embed it and store it into a vectorial database by using FIASS (Facebook AI Similarity Search) from the langchain package.
+
+ The application runs on 2 threads so that the interface doesn't freeze when the langchain framework makes the request to OpenAI to get an answer. While the thread makes the reques to OpenAI a loading bar dwonside the textbox starts moving so that the user can know that the application is reqesting an answer. After the answer is written the loadbar stops.
 
 # Interface
 
@@ -15,7 +17,11 @@
 
 # Inatallation and Packages
 
-You will need to download the fies as .zip, extract them and then open the .py file with pycharm as a new project. You need to keep the folders 'API_KEY' and 'FILES_HERE' inside the project repository, otherwise the program won't work correctly.
+You will need to download the fies as .zip, extract them and then open the .py file with pycharm as a new project. You need to keep the folders '**API_KEY**' and '**FILES_HERE**' inside the project repository, otherwise the program won't work correctly.
+
+As instructed upside, you will need to paste you **API_KEY** into the folder '**API_KEY**' inside the '**OPENAI_API_KEY.env**' file.
+
+Files that you want the neural network to work with will be put inside '**FILES_HERE**'
 
 This project uses multiple packages which you will need to install inside you python project for the application to run.
 
