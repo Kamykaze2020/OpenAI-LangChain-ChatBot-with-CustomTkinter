@@ -7,6 +7,8 @@
 
  The application runs on 2 threads so that the interface doesn't freeze when the langchain framework makes the request to OpenAI to get an answer. While the thread makes the reques to OpenAI a loading bar downside the textbox starts moving so that the user can know that the application is running. After the answer is written the loadbar stops.
 
+ You can select the language in which you want the ChatBot to respond in the right corner.
+
 # Interface
 
 ![4](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/696335e7-96d3-4c37-be2c-92bc4cfe8cb7)
