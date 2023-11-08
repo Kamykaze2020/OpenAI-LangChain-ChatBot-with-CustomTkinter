@@ -1,4 +1,6 @@
 # OpenAI-LangChain-ChatBot-with-CustomTkinter
+### What is the application?
+
  ChatBot application with interface in CustomTkinter that uses the LangChain framework to embed and store data inside a vectorial database so that it can send it to a neural network provided by OpenAI and get the user the answers that he needs based on the files stored.
 
  The application uses the **OPENAI_API_KEY** that you can get from https://platform.openai.com/account/api-keys. After you make an account and get the **API_KEY** you need to insert it into the folder '**API_KEY**' inside the '**OPENAI_API_KEY.env**' file.
@@ -18,6 +20,27 @@
 
 ![video-to-gif](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/e78ced79-af7b-47e0-8b23-bcdc2bbaba4c)
 
+# Theory
+
+Traditional databases store strings, numbers, and other types of scalar data in rows and columns. On the other hand, a vector database operates on vectors, so the way it’s optimized and queried is quite different.
+
+In traditional databases, we are usually querying for rows in the database where the value usually exactly matches our query. In vector databases, we apply a similarity metric to find a vector that is the most similar to our query.
+
+A vector database uses a combination of different algorithms that all participate in Approximate Nearest Neighbor (ANN) search. These algorithms optimize the search through hashing, quantization, or graph-based search.
+
+These algorithms are assembled into a pipeline that provides fast and accurate retrieval of the neighbors of a queried vector. Since the vector database provides approximate results, the main trade-offs we consider are between accuracy and speed. The more accurate the result, the slower the query will be. However, a good system can provide ultra-fast search with near-perfect accuracy.
+
+Here’s a common pipeline for a vector database:
+
+![6](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/158a61a0-a713-4e9c-b6f3-5c1b01cae5fb)
+
+1.	**Indexing**: The vector database indexes vectors using an algorithm such as PQ, LSH, or HNSW (more on these below). This step maps the vectors to a data structure that will enable faster searching.
+
+2.	**Querying**: The vector database compares the indexed query vector to the indexed vectors in the dataset to find the nearest neighbors (applying a similarity metric used by that index)
+
+3.	**Post Processing**: In some cases, the vector database retrieves the final nearest neighbors from the dataset and post-processes them to return the final results. This step can include re-ranking the nearest neighbors using a different similarity measure.
+
+More info at: https://www.pinecone.io/learn/vector-database/
 
 # Inatallation and Packages
 
