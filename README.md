@@ -5,15 +5,17 @@
 
  You can put files like pdf, word, exel etc. inside the '**FILES_HERE**' folder. There the application will extract the text from the files in the folder, store the data inside a vector, segment it, embed it and store it into a vectorial database by using FIASS (Facebook AI Similarity Search) from the langchain package.
 
- The application runs on 2 threads so that the interface doesn't freeze when the langchain framework makes the request to OpenAI to get an answer. While the thread makes the reques to OpenAI a loading bar dwonside the textbox starts moving so that the user can know that the application is reqesting an answer. After the answer is written the loadbar stops.
+ The application runs on 2 threads so that the interface doesn't freeze when the langchain framework makes the request to OpenAI to get an answer. While the thread makes the reques to OpenAI a loading bar downside the textbox starts moving so that the user can know that the application is running. After the answer is written the loadbar stops.
 
 # Interface
 
-![5](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/2a77aab8-0cfa-42ef-9348-83cb40115ee1)
+![4](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/696335e7-96d3-4c37-be2c-92bc4cfe8cb7)
+
 
  # Example of running
 
-![4](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/d18d979b-05c1-4a1c-88c3-86c8235271f5)
+![video-to-gif](https://github.com/Kamykaze2020/OpenAI-LangChain-ChatBot-with-CustomTkinter/assets/62187923/e78ced79-af7b-47e0-8b23-bcdc2bbaba4c)
+
 
 # Inatallation and Packages
 
